@@ -12,12 +12,12 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 
 
-### knowages:
+### knowledges
 
-### react{create-react-app}
+### react {create-react-app hook}
 ### react-router{ Redirect } 
-### redux{reducer action thunk} 
-### firebase{firestore redux-firebase auth notification deploy}
+### redux {reducer action thunk} 
+### firebase {firestore redux-firebase auth notification deploy security}
 
 
  ### thank net ninja youtube channel
