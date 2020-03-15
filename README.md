@@ -4,18 +4,18 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 
 
-In the project directory, you can run:
+###In the project directory, you can run:
 
-npm i
+###npm i
 
 ### yarn start  /npm start
 
 
 
-knowages:
-react{create-react-app} react-router{ Redirect } 
-redux{reducer action thunk} 
-firebase{firestore redux-firebase auth notification deploy}
+###knowages:
+###react{create-react-app} react-router{ Redirect } 
+###redux{reducer action thunk} 
+###firebase{firestore redux-firebase auth notification deploy}
 
 
-  thank net ninja youtube channel
+ ### thank net ninja youtube channel
