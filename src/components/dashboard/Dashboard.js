@@ -5,7 +5,8 @@ import { connect } from "react-redux";
 import { firebaseConnect, firestoreConnect } from "react-redux-firebase";
 import { compose } from "redux";
 import { Redirect } from "react-router-dom";
-const Dashboard = props => {
+const Dashboard = (props) => {
+  useEffect(() => {}, []);
   const { projects, auth, notifications } = props;
   if (!auth.uid) return <Redirect to="/signin" />;
   return (
@@ -23,17 +24,17 @@ const Dashboard = props => {
   );
 };
 
-const mapStateToProps = state => {
+const mapStateToProps = (state) => {
   return {
     projects: state.firestore.ordered.projects,
     auth: state.firebase.auth,
-    notifications: state.firestore.ordered.notifications
+    notifications: state.firestore.ordered.notifications,
   };
 };
 export default compose(
   connect(mapStateToProps),
   firestoreConnect([
     { collection: "projects", orderBy: ["createdAt", "desc"] },
-    { collection: "notifications", limit: 8, orderBy: ["time", "desc"] }
+    { collection: "notifications", limit: 8, orderBy: ["time", "desc"] },
   ])
 )(Dashboard);

@@ -10,6 +10,7 @@ import ProjectDetails from "./components/projects/ProjectDetails";
 import SignIn from "./components/auth/SignIn";
 import SignUp from "./components/auth/SignUp";
 import CreateProject from "./components/projects/CreateProject";
+import TestCAM from "./components/TestCAM";
 const App = () => {
   return (
     <Router>
@@ -21,6 +22,7 @@ const App = () => {
           <Route path="/signin" component={SignIn} exact />
           <Route path="/signup" component={SignUp} exact />
           <Route path="/create" component={CreateProject} exact />
+          <Route path="/test" component={TestCAM} exact />
         </Switch>
       </div>
     </Router>
